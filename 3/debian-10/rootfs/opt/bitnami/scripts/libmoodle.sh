@@ -266,7 +266,7 @@ moodle_install() {
         "admin/cli/install.php"
         "--lang=en"
         "--chmod=2775"
-        "--wwwroot=http://localhost:${http_port}"
+        "--wwwroot=http://${<MOODLE_ROOT_PATH}:${http_port}"
         "--dataroot=${MOODLE_DATA_DIR}"
         "--adminuser=${MOODLE_USERNAME}"
         "--adminpass=${MOODLE_PASSWORD}"
